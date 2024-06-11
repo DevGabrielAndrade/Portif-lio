@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --cor-1:#9cf5ca;
+    --cor0:#557588;
+    --cor1:#223F59;
+    --cor2:#3772A6;
+    --cor3:#3365A6; 
+    --cor4:#214a80; 
+    --cor5:#1B3059;
+    --cor6:#2B512F;
+    --cor7:#2B452F;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(to top, var(--cor0),var(--cor1),var(--cor2),var(--cor3),var(--cor4),var(--cor5)  );
+    color: #c9d1d9;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    border-radius: 30%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #b4bdc5;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 20px;
+    border-radius: 8px;
+    color: #f8f8f8;
+    text-align: justify;
+}
+
+.info-box p {
+    margin: 5px 0;
+}
+
+
+main {
+    padding: 10px;
+        background-color: transparent;
+}
+main h1{
+    font-size: 2.5em;
+    margin: 20px;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.project {
+    background-color: #1b232e94;
+    border-radius: 13px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.842);
+}
+
+.project a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: 1.05em;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+footer {
+    background-color: #161b22;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #58a6ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .info-box {
+        margin-top: 20px; 
+        margin-right: 0;
+        padding: 10px; 
+    }
+
+    .project {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .project img {
+        height: 150px; 
+    }
+
+    .info-box {
+        font-size: 0.9em;
+    }
+}
